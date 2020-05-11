@@ -1,0 +1,68 @@
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 5547. -- [PA2019]Iloczyny Fibonacciego</title><center><h2>5547: [PA2019]Iloczyny Fibonacciego</h2><span class=green>Time Limit: </span>200 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>768 MB<br><span class=green>Submit: </span>5&nbsp;&nbsp;<span class=green>Solved: </span>2<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5547'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5547'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5547'>Discuss</a>]</center><h2>Description</h2><div class=content><div>定义斐波那契数列为F[1]=1,F[2]=2,F[i]=F[i-1]+F[i-2](i&gt;=3)。</div>
+<div></div>
+<div>对于任意一个正整数x，我们总能将x写成唯一的斐波那契表示(b[1],b[2],...,b[n])，满足：</div>
+<div></div>
+<div>1. b[1]*F[1]+b[2]*F[2]+...+b[n]*F[n]=x。</div>
+<div></div>
+<div>2. 对于任意的i(1&lt;=i&lt;n)都有b[i]=0或b[i]=1；对于b[n]有b[n]=1。</div>
+<div></div>
+<div>3. 对于任意的i(1&lt;=i&lt;n)都有b[i]*b[i+1]=0。</div>
+<div></div>
+<div>比如2=(0,1),4=(1,0,1),5=(0,0,0,1),20=(0,1,0,1,0,1)=F[2]+F[4]+F[6]=2+5+13。</div>
+<div></div>
+<div>给定两个斐波那契表示的正整数A和B，请输出A*B的斐波那契表示。</div>
+<p></p></div><h2>Input</h2><div class=content><div>第一行包含一个正整数T(1&lt;=T&lt;=1000)，表示测试数据的组数。</div>
+<div>每组测试数据包含两行，分别描述A和B的斐波那契表示。每行首先是一个正整数n，然后n个非负整数b[1],b[2],...,b[n]。</div>
+<div>输入数据保证所有的n加起来不超过1000000。</div>
+<p></p></div><h2>Output</h2><div class=content><div>对于每组数据输出一行，按照输入格式输出A*B的斐波那契表示。</div>
+<p></p></div><h2>Sample Input</h2>
+			<div class=content><span class=sampledata>2<br />
+3 1 0 1<br />
+4 0 0 0 1<br />
+2 0 1<br />
+1 1</span></div><h2>Sample Output</h2>
+			<div class=content><span class=sampledata>6 0 1 0 1 0 1<br />
+2 0 1</span></div><h2>HINT</h2>
+			<div class=content><p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=%E9%B8%A3%E8%B0%A2Claris%E4%B8%8A%E4%BC%A0'>鸣谢Claris上传</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5547'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5547'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5547'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

@@ -1,4 +1,28 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[Cqoi2016]路由表</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#4523. [Cqoi2016]路由表</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：512 MiB</span> <span class="ui label">时间限制：30 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=4523">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=4523">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=4523">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><p>&nbsp;路由表查找是路由器在转发IP报文时的重要环节。通常路由表中的表项由目的地址、掩码、下一</p>
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 4523. -- [Cqoi2016]路由表</title><center><h2>4523: [Cqoi2016]路由表</h2><span class=green>Time Limit: </span>30 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>512 MB<br><span class=green>Submit: </span>338&nbsp;&nbsp;<span class=green>Solved: </span>221<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=4523'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=4523'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=4523'>Discuss</a>]</center><h2>Description</h2><div class=content><p>&nbsp;路由表查找是路由器在转发IP报文时的重要环节。通常路由表中的表项由目的地址、掩码、下一</p>
 <div>跳（Next Hop）地址和其他辅助信息组成。例如：</div>
 <div><img width="352" height="175" alt="" src="upload/201604/1(1).png" /></div>
 <div>当路由器收到一个IP报文时，会将报文中的目的IP地址与路由表中的表项逐条进行比较，选</div>
@@ -20,14 +44,14 @@
 <div>在实际的核心路由器中，路由表通常较大（现在互联网的全局路由表已经接60万条记录），</div>
 <div>并且会随着新接入设备不断扩张。为了分析路由表变化对转发产生的影响，网络工程师想要知道</div>
 <div>一段时间内某个IP地址的路由表项选择发生了多少次变化（变化是指由于最明确匹配等因素选择</div>
-<div>了不同的表项，不考虑下一跳地址）。</div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>第一行为整数M，表示共有M次操作。接下来M行，每行描述一次操作。操作有两种：</div>
+<div>了不同的表项，不考虑下一跳地址）。</div></div><h2>Input</h2><div class=content><div>第一行为整数M，表示共有M次操作。接下来M行，每行描述一次操作。操作有两种：</div>
 <div>A D/L</div>
 <div>其中.为一个IP地址，G为整数（1&le;L&le;32）。添加一条表项至路由表，其目的地址为</div>
 <div>D掩码长度为L。下一跳地址由于没有用到，故省略。</div>
 <div>Q D a b</div>
 <div>其中D为一个IP地址，a,b为正整数（a&le;b）。查询从第a次至第b次添加表项期间（含</div>
 <div>a、b），目的地址D的路由表项选择发生了多少次变化。保证查询时表中至少有b个表项。</div>
-<div>N&lt;=10^6数据保证不会重复添加目的地址和掩码长度都相同的表项。</div></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p>&nbsp;包含若干行，每行仅有一个整数，依次对应每个查询操作。</p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+<div>N&lt;=10^6数据保证不会重复添加目的地址和掩码长度都相同的表项。</div></div><h2>Output</h2><div class=content><p>&nbsp;包含若干行，每行仅有一个整数，依次对应每个查询操作。</p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>1000<br />
 A 128.0.0.0/1<br />
 A 128.0.0.0/4<br />
@@ -1029,7 +1053,7 @@ Q 3.192.0.0 14 417<br />
 Q 193.24.0.6 72 384<br />
 A 96.0.0.0/26<br />
 A 62.170.234.0/30<br />
-</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+</span></div><h2>Sample Output</h2>
 			<div class=content><span class=sampledata>1<br />
 3<br />
 3<br />
@@ -1420,8 +1444,26 @@ A 62.170.234.0/30<br />
 4<br />
 4<br />
 1<br />
-</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+</span></div><h2>HINT</h2>
 			<div class=content><p><p>2.route<br /><br />
 对于一次查询的一种理解方式是：无视其它所有查询操作，只看添加操作。先清空路由表，然后执行第1到a-1次添加操作。之后再统计第a到b次添加操作过程中，统计匹配改变的次数。<br /><br />
 数据范围：<br /><br />
-设一条表项的掩码长度为L，数据保证将目的地址转为二进制串后，末尾的32-L位均为0</p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+设一条表项的掩码长度为L，数据保证将目的地址转为二进制串后，末尾的32-L位均为0</p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=4523'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=4523'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=4523'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

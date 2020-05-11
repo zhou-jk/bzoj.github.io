@@ -1,4 +1,28 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>JSOI2012 分零食</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#4332. JSOI2012 分零食</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：256 MiB</span> <span class="ui label">时间限制：10 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=4332">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=4332">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=4332">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>这里是欢乐的进香河，这里是欢乐的幼儿园。&nbsp;</div>
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 4332. -- JSOI2012 分零食</title><center><h2>4332: JSOI2012 分零食</h2><span class=green>Time Limit: </span>10 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>256 MB<br><span class=green>Submit: </span>274&nbsp;&nbsp;<span class=green>Solved: </span>142<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=4332'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=4332'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=4332'>Discuss</a>]</center><h2>Description</h2><div class=content><div>这里是欢乐的进香河，这里是欢乐的幼儿园。&nbsp;</div>
 <div>今天是2月14日，星期二。在这个特殊的日子里，老师带着同学们欢乐地跳着，笑着。校长从幼儿园旁边的小吃店买了大量的零食决定分给同学们。听到这个消息，所有同学都安安静静地排好了队，大家都知道，校长不喜欢调皮的孩子。&nbsp;</div>
 <div>同学们依次排成了一列，其中有A位小朋友，有三个共同的欢乐系数O，S和U。如果有一位小朋友得到了x个糖果，那么她的欢乐程度就是f(x)=O*x2+S*x+U。&nbsp;</div>
 <div>现在校长开始分糖果了，一共有M个糖果。有些小朋友可能得不到糖果，对于那些得不到糖果的小朋友来说，欢乐程度就是1。如果一位小朋友得不到糖果，那么在她身后的小朋友们也都得不到糖果。（即这一列得不到糖果的小朋友一定是最后的连续若干位）&nbsp;</div>
@@ -8,23 +32,41 @@
 <div>后记：&nbsp;</div>
 <div>虽然大家都知道，即便知道了T，知道了S对P取模后的结果，也没有办法知道期望情况下，所有小朋友欢乐程度的乘积。但是，当呆呆想到这一点的时候，已经彻底绝望了。&nbsp;</div>
 <div></div>
-<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>第一行有2个整数，分别是M和P。&nbsp;</div>
+<p></p></div><h2>Input</h2><div class=content><div>第一行有2个整数，分别是M和P。&nbsp;</div>
 <div>第二行有一个整数A，第三行有一个整数O。&nbsp;</div>
 <div>第四行有一个整数S，第五行有一个整数U。&nbsp;</div>
 <div></div>
-<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>一个整数S，因为答案可能很大，你只需要输出S 对P取模后的结果。&nbsp;</div>
+<p></p></div><h2>Output</h2><div class=content><div>一个整数S，因为答案可能很大，你只需要输出S 对P取模后的结果。&nbsp;</div>
 <div></div>
-<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+<p></p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>4 100 <br />
 4 <br />
 1 <br />
 0 <br />
-0 </span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+0 </span></div><h2>Sample Output</h2>
 			<div class=content><span class=sampledata>63 <br />
 <br />
 样例说明 <br />
 函数f(x)=x^2。一共有4份零食，4位同学。如果只有第一个同学得到，欢乐程度为16，若前两位同学得到，欢乐程度的所有可能依次为9，9，16，若有三位同学得到，欢乐程度有4，4，4，最后一种情况，每一个同学都得到了零食，欢乐程度为1。相加后得到S=63。 <br />
 <br />
-应上传者要求，此题不公开，如有异议，请提出.</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+应上传者要求，此题不公开，如有异议，请提出.</span></div><h2>HINT</h2>
 			<div class=content><p><p>对于100%的数据，M&lt;=10000，P&lt;=255，A&lt;=108，O&lt;=4，S&lt;=300，U&lt;=100。&nbsp;</p><br />
-<p></p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+<p></p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=4332'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=4332'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=4332'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

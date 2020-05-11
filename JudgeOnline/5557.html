@@ -1,0 +1,165 @@
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 5557. -- [Usaco2019Open]Valleys</title><center><h2>5557: [Usaco2019Open]Valleys</h2><span class=green>Time Limit: </span>20 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>256 MB<br><span class=green>Submit: </span>1&nbsp;&nbsp;<span class=green>Solved: </span>1<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5557'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5557'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5557'>Discuss</a>]</center><h2>Description</h2><div class=content><div>Bessie喜欢观光，而今天她正在寻找景色优美的山谷。</div>
+<div>她感兴趣的是一个N&times;N的方阵，其中每个格子都有一个高度。所有在此正方形方阵之外的格子的高度可以被看作是无限大。</div>
+<div></div>
+<div>山谷指的是一块连续、不含洞的一块区域，并且每个相邻的包围该区域的格子都高于这块区域中的所有格子。</div>
+<div></div>
+<div>更形式化地说：</div>
+<div></div>
+<div>一组格子被称作是&ldquo;沿边相邻的&rdquo;，如果可以从其中任意一个格子出发，经过一些沿上、下、左、右方向的移动，到达其中所有其他格子。</div>
+<div>一组格子被称作是&ldquo;沿点相邻的&rdquo;，如果可以从其中任意一个格子出发，经过一些沿上、下、左、右、对角线方向的移动，到达其中所有其他格子。</div>
+<div>一个&ldquo;区域&rdquo;指的是一组非空并且沿边相邻的格子。</div>
+<div>一个区域被称作是&ldquo;有洞的&rdquo;，如果这个区域的补集（包括在N&times;N方阵之外的无限高格子）不是沿点相邻的。</div>
+<div>区域的&ldquo;边界&rdquo;指的是所有与该区域内的某个格子正交相邻（上、下、左、右），但本身不在该区域内的格子。</div>
+<div>一个&ldquo;山谷&rdquo;指的是某个非有洞区域，满足区域内的任意格子的高度低于该区域边界上任意格子的高度。</div>
+<div>Bessie的目标是求出所有山谷的大小之和。</div>
+<div></div>
+<div>一些例子</div>
+<div></div>
+<div>这是一个区域：</div>
+<div></div>
+<div>oo.</div>
+<div>ooo</div>
+<div>..o</div>
+<div>这不是一个区域（中间的格子和右下角的格子不沿边相邻）：</div>
+<div></div>
+<div>oo.</div>
+<div>oo.</div>
+<div>..o</div>
+<div>这是一个非有洞区域：</div>
+<div></div>
+<div>ooo</div>
+<div>o..</div>
+<div>o..</div>
+<div>这是一个有洞的区域（&ldquo;甜甜圈&rdquo;中间的格子与区域外的格子不沿点相邻）：</div>
+<div></div>
+<div>ooo</div>
+<div>o.o</div>
+<div>ooo</div>
+<div>这是另一个非有洞区域（中间的格子与右下角的格子沿点相邻）：</div>
+<div></div>
+<div>ooo</div>
+<div>o.o</div>
+<div>oo.</div>
+<div></div>
+<p></p></div><h2>Input</h2><div class=content><div></div>
+<div>输入样例：</div>
+<div></div>
+<div>3</div>
+<div>1 10 2</div>
+<div>20 100 30</div>
+<div>3 11 50</div>
+<div>输出样例：</div>
+<div></div>
+<div>30</div>
+<div>在这个例子中，有三个大小为1的山谷：</div>
+<div></div>
+<div>o.o</div>
+<div>...</div>
+<div>o..</div>
+<div>一个大小为2的山谷：</div>
+<div></div>
+<div>...</div>
+<div>...</div>
+<div>oo.</div>
+<div>一个大小为3的山谷：</div>
+<div></div>
+<div>ooo</div>
+<div>...</div>
+<div>...</div>
+<div>一个大小为6的山谷：</div>
+<div></div>
+<div>ooo</div>
+<div>o..</div>
+<div>oo.</div>
+<div>一个大小为7的山谷：</div>
+<div></div>
+<div>ooo</div>
+<div>o.o</div>
+<div>oo.</div>
+<div>以及一个大小为9的山谷：</div>
+<div></div>
+<div>ooo</div>
+<div>ooo</div>
+<div>ooo</div>
+<div>所以，答案为1 + 1 + 1 + 2 + 3 + 6 + 7 + 9 = 30。</div>
+<p></p></div><h2>Output</h2><div class=content><div>输入的第一行包含N，其中1&le;N&le;750。</div>
+<div>以下N行每行包含N个整数，为方阵每个格子的高度。所有高度hh满足1&le;h&le;10^6。所有高度均为不同的整数。</div></div><h2>Sample Input</h2>
+			<div class=content><span class=sampledata>3<br />
+1 10 2<br />
+20 100 30<br />
+3 11 50</span></div><h2>Sample Output</h2>
+			<div class=content><span class=sampledata>30<br />
+在这个例子中，有三个大小为1的山谷：<br />
+<br />
+o.o<br />
+...<br />
+o..<br />
+一个大小为2的山谷：<br />
+<br />
+...<br />
+...<br />
+oo.<br />
+一个大小为3的山谷：<br />
+<br />
+ooo<br />
+...<br />
+...<br />
+一个大小为6的山谷：<br />
+<br />
+ooo<br />
+o..<br />
+oo.<br />
+一个大小为7的山谷：<br />
+<br />
+ooo<br />
+o.o<br />
+oo.<br />
+以及一个大小为9的山谷：<br />
+<br />
+ooo<br />
+ooo<br />
+ooo<br />
+所以，答案为1 + 1 + 1 + 2 + 3 + 6 + 7 + 9 = 30。</span></div><h2>HINT</h2>
+			<div class=content><p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=Platinum'>Platinum</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5557'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5557'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5557'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

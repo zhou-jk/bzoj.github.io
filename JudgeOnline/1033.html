@@ -1,4 +1,28 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[ZJOI2008]杀蚂蚁antbuster</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#1033. [ZJOI2008]杀蚂蚁antbuster</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：128 MiB</span> <span class="ui label">时间限制：10 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=1033">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=1033">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=1033">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><p>　　最近，佳佳迷上了一款好玩的小游戏：antbuster。游戏规则非常简单：在一张地图上，左上角是蚂蚁窝，右<br />
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 1033. -- [ZJOI2008]杀蚂蚁antbuster</title><center><h2>1033: [ZJOI2008]杀蚂蚁antbuster</h2><span class=green>Time Limit: </span>10 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>128 MB<br><span class=green>Submit: </span>1490&nbsp;&nbsp;<span class=green>Solved: </span>647<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=1033'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=1033'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=1033'>Discuss</a>]</center><h2>Description</h2><div class=content><p>　　最近，佳佳迷上了一款好玩的小游戏：antbuster。游戏规则非常简单：在一张地图上，左上角是蚂蚁窝，右<br />
 下角是蛋糕，蚂蚁会源源不断地从窝里爬出来，试图把蛋糕搬回蚂蚁窝。而你的任务，就是用原始资金以及杀蚂蚁<br />
 获得的奖金造防御塔，杀掉这些试图跟你抢蛋糕的蚂蚁~下附一张游戏截图：</p>
 <p><span style="font-size: medium">&nbsp;<img border="0" alt="" src="images/1033/1.jpg" /> </span></p>
@@ -43,18 +67,18 @@ n * m的地图，它的左上角坐标为（0，0），右下角坐标为（n，
 没被拿走，它把蛋糕扛上，血量增加，并在这时被所有塔设成target。然后所有塔同时开始攻击。如果攻击结束后<br />
 那只扛着蛋糕的蚂蚁挂了，蛋糕瞬间归位。攻击结束后，如果发现扛蛋糕的蚂蚁没死并在窝的位置，就认为蚂蚁抢<br />
 到了蛋糕。游戏也在此时结束。最后，地图上所有点的信息素损失1单位。所有蚂蚁的年龄加1。漫长的1秒到此结<br />
-束。</p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p>　　输入的第一行是2个用空格隔开的整数，n、m，分别表示了地图的长和宽。第二行是3个用空格隔开的整数，s<br />
+束。</p></div><h2>Input</h2><div class=content><p>　　输入的第一行是2个用空格隔开的整数，n、m，分别表示了地图的长和宽。第二行是3个用空格隔开的整数，s<br />
 、d、r，依次表示炮塔的个数、单次攻击伤害以及攻击范围。接下来s行，每行是2个用空格隔开的整数x、y，描述<br />
 了一个炮塔的位置。当然，蚂蚁窝的洞口以及蛋糕所在的位置上一定没有炮塔。最后一行是一个正整数t，表示我<br />
-们模拟游戏的前t秒钟1 &lt; =&nbsp; n,m &lt; =&nbsp; 8，s &lt; =&nbsp; 20，t &lt; =&nbsp; 200,000</p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p>　　如果在第t秒或之前蚂蚁抢到了蛋糕，输出一行&ldquo;Game over after x seconds&rdquo;，其中x为游戏结束的时间，<br />
+们模拟游戏的前t秒钟1 &lt; =&nbsp; n,m &lt; =&nbsp; 8，s &lt; =&nbsp; 20，t &lt; =&nbsp; 200,000</p></div><h2>Output</h2><div class=content><p>　　如果在第t秒或之前蚂蚁抢到了蛋糕，输出一行&ldquo;Game over after x seconds&rdquo;，其中x为游戏结束的时间，<br />
 否则输出&ldquo;The game is going on&rdquo;。如果游戏在t秒或之前结束，输出游戏结束时所有蚂蚁的信息，否则输出t秒<br />
 后所有蚂蚁的信息。格式如下：第一行是1个整数s，表示此时活着的蚂蚁的总数。接下来s行，每行5个整数，依次<br />
-表示一只蚂蚁的年龄（单位为秒）、等级、当前血量，以及在地图上的位置（a，b）。输出按蚂蚁的年龄递减排序</p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+表示一只蚂蚁的年龄（单位为秒）、等级、当前血量，以及在地图上的位置（a，b）。输出按蚂蚁的年龄递减排序</p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>8 8<br />
 2 10 1<br />
 7 8<br />
 8 6<br />
-5</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+5</span></div><h2>Sample Output</h2>
 			<div class=content><span class=sampledata>The game is going on<br />
 5<br />
 5 1 4 1 4<br />
@@ -66,5 +90,23 @@ n * m的地图，它的左上角坐标为（0，0），右下角坐标为（n，
 　　3*5的地图，有1个单次伤害为1、攻击范围为2的激光炮塔，它的位置为（2，2），模拟游戏的前5秒。5秒内有<br />
 5只蚂蚁出生，都是向东爬行，其中第1~4只在路过（0，2）点时被激光塔伤了1格血。在第5秒的时候，最早出生的<br />
 蚂蚁按移动规则1~3本来该向东移动，但由于规则4的作用，它在发现向北和向西移动都会到达不可达点后，最终选<br />
-择了向南移动。</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
-			<div class=content><p><p>一个好的题面版本:&nbsp;<a href="upload/201803/1033.rar">JudgeOnline/upload/201803/1033.rar</a></p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+择了向南移动。</span></div><h2>HINT</h2>
+			<div class=content><p><p>一个好的题面版本:&nbsp;<a href="upload/201803/1033.rar">JudgeOnline/upload/201803/1033.rar</a></p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=1033'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=1033'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=1033'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

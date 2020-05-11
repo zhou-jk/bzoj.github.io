@@ -1,0 +1,69 @@
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 5535. -- String</title><center><h2>5535: String</h2><span class=green>Time Limit: </span>5 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>512 MB<br><span class=green>Submit: </span>6&nbsp;&nbsp;<span class=green>Solved: </span>2<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5535'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5535'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5535'>Discuss</a>]</center><h2>Description</h2><div class=content><div>
+<div>对于一个01串s，定义函数f(s)为s每一位的异或和，例如f(111)=1,f(110)=0,f(101)=0,f(100)=1。</div>
+<div>一个01串s是好串，当且仅当其满足以下条件：</div>
+<div>串的长度为2的幂次方。</div>
+<div>存在两个非负整数x,b，使得i&isin;[0,|s|-1],si=f(i and x)xorb</div>
+<div>（下标从0开始，此处f函数计算的是i and x对应的二进制串的值）。</div>
+<div>现对于一个01串，可以使用区间取反操作，即选定一个区间[l,r],0&le;l&le;r&lt;|s|，</div>
+<div>并将[l,r]中的每一位取反（即1&rarr;0,0&rarr;1）。</div>
+<div>现在给出一个长度为n的01串s，q次询问子串sl,r最少经过多少次区间取反操作变成好串</div>
+</div>
+<p></p></div><h2>Input</h2><div class=content><div>第一行包含一个整数n。</div>
+<div>第二行包含一个长为n的01串s。</div>
+<div>第三行包含一个整数q。</div>
+<div>接下来q行每行两个整数表示l,r。保证子串的长度为2的幂次方，且下标从0开始。</div>
+<div>n,q&le;5000</div>
+<p></p></div><h2>Output</h2><div class=content><div>输出q行，对于每个询问输出对应的答案</div>
+<p></p></div><h2>Sample Input</h2>
+			<div class=content><span class=sampledata>8<br />
+00000101<br />
+3<br />
+0 7<br />
+2 5<br />
+0 3</span></div><h2>Sample Output</h2>
+			<div class=content><span class=sampledata>2 <br />
+1 <br />
+0</span></div><h2>HINT</h2>
+			<div class=content><p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5535'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5535'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5535'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

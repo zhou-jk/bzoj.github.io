@@ -1,4 +1,28 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>总统选举</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#4966. 总统选举</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：512 MiB</span> <span class="ui label">时间限制：20 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=4966">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=4966">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=4966">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>黑恶势力的反攻计划被小C成功摧毁，黑恶势力只好投降。秋之国的人民解放了，举国欢庆。此时，原秋之国总统</div>
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 4966. -- 总统选举</title><center><h2>4966: 总统选举</h2><span class=green>Time Limit: </span>20 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>512 MB<br><span class=green>Submit: </span>185&nbsp;&nbsp;<span class=green>Solved: </span>46<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=4966'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=4966'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=4966'>Discuss</a>]</center><h2>Description</h2><div class=content><div>黑恶势力的反攻计划被小C成功摧毁，黑恶势力只好投降。秋之国的人民解放了，举国欢庆。此时，原秋之国总统</div>
 <div>因没能守护好国土，申请辞职，并请秋之国人民的大救星小C钦定下一任。作为一名民主人士，小C决定举行全民大</div>
 <div>选来决定下一任。为了使最后成为总统的人得到绝大多数人认同，小C认为，一个人必须获得超过全部人总数的一</div>
 <div>半的票数才能成为总统。如果不存在符合条件的候选人，小C只好自己来当临时大总统。为了尽可能避免这种情况</div>
@@ -10,22 +34,40 @@
 <div>有m次预选，每次选取编号[li,ri]内的选民展开小规模预选，在该区间内获得超过区间大小一半的票的人获胜，如</div>
 <div>果没有人获胜，则由小C钦定一位候选者获得此次预选的胜利（获胜者可以不在该区间内），每次预选的结果需要</div>
 <div>公布出来，并且每次会有ki个人决定将票改投向该次预选的获胜者。全部预选结束后，公布最后成为总统的候选人</div>
-<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>第一行两个整数n,m，表示秋之国人数和预选次数。</div>
+<p></p></div><h2>Input</h2><div class=content><div>第一行两个整数n,m，表示秋之国人数和预选次数。</div>
 <div>第二行n个整数，分别表示编号1~n的选民投的票。</div>
 <div>接下来m行，每行先有4个整数，分别表示li,ri,si,ki，si表示若此次预选无人胜选，视作编号为si的人获得胜利</div>
 <div>接下来ki个整数，分别表示决定改投的选民。</div>
 <div>1&lt;=n,m&lt;=500,000，&Sigma;ki&lt;=1,000,000，1&lt;=li&lt;=ri&lt;=n，1&lt;=si&lt;=n。</div>
-<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>共m+1行，前m行表示各次预选的结果，最后一行表示最后成为总统的候选人，若最后仍无人胜选，输出-1。</div>
-<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+<p></p></div><h2>Output</h2><div class=content><div>共m+1行，前m行表示各次预选的结果，最后一行表示最后成为总统的候选人，若最后仍无人胜选，输出-1。</div>
+<p></p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>5 4<br />
 1 2 3 4 5<br />
 1 2 1 1 3<br />
 5 5 1 2 2 4<br />
 2 4 2 0<br />
-3 4 2 1 4</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+3 4 2 1 4</span></div><h2>Sample Output</h2>
 			<div class=content><span class=sampledata>1<br />
 5<br />
 5<br />
 2<br />
--1</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
-			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+-1</span></div><h2>HINT</h2>
+			<div class=content><p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=4966'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=4966'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=4966'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

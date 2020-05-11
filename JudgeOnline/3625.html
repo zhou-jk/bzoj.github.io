@@ -1,11 +1,35 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[Codeforces Round #250]小朋友和二叉树</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#3625. [Codeforces Round #250]小朋友和二叉树</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：256 MiB</span> <span class="ui label">时间限制：40 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=3625">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=3625">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=3625">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><p><span style="font-size: medium">我们的小朋友很喜欢计算机科学，而且尤其喜欢二叉树。<br />
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 3625. -- [Codeforces Round #250]小朋友和二叉树</title><center><h2>3625: [Codeforces Round #250]小朋友和二叉树</h2><span class=green>Time Limit: </span>40 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>256 MB<br><span class=green>Submit: </span>1657&nbsp;&nbsp;<span class=green>Solved: </span>674<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=3625'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=3625'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=3625'>Discuss</a>]</center><h2>Description</h2><div class=content><p><span style="font-size: medium">我们的小朋友很喜欢计算机科学，而且尤其喜欢二叉树。<br />
 考虑一个含有n个互异正整数的序列c[1],c[2],...,c[n]。如果一棵带点权的有根二叉树满足其所有顶点的权值都在集合{c[1],c[2],...,c[n]}中，我们的小朋友就会将其称作神犇的。并且他认为，一棵带点权的树的权值，是其所有顶点权值的总和。<br />
 给出一个整数m，你能对于任意的s(1&lt;=s&lt;=m)计算出权值为s的神犇二叉树的个数吗？请参照样例以更好的理解什么样的两棵二叉树会被视为不同的。<br />
 我们只需要知道答案关于998244353(7*17*2^23+1,一个质数)取模后的值。<br />
-</span></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p><font size="4">第一行有2个整数 n,m(1&lt;=n&lt;=10^5; 1&lt;=m&lt;=10^5)。<br />
+</span></p></div><h2>Input</h2><div class=content><p><font size="4">第一行有2个整数 n,m(1&lt;=n&lt;=10^5; 1&lt;=m&lt;=10^5)。<br />
 第二行有n个用空格隔开的互异的整数 c[1],c[2],...,c[n]（1&lt;=c[i]&lt;=10^5)。<br />
-</font></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p><font size="4">输出m行，每行有一个整数。第i行应当含有权值恰为i的神犇二叉树的总数。请输出答案关于998244353(=7*17*2^23+1,一个质数)取模后的结果。<br />
-</font></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+</font></p></div><h2>Output</h2><div class=content><p><font size="4">输出m行，每行有一个整数。第i行应当含有权值恰为i的神犇二叉树的总数。请输出答案关于998244353(=7*17*2^23+1,一个质数)取模后的结果。<br />
+</font></p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>样例一：<br />
 2 3<br />
 1 2<br />
@@ -15,7 +39,7 @@
 样例三：<br />
 5 10<br />
 13 10 6 4 15<br />
-</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+</span></div><h2>Sample Output</h2>
 			<div class=content><span class=sampledata>样例一：<br />
 1<br />
 3<br />
@@ -42,6 +66,25 @@
 2<br />
 0<br />
 5<br />
-</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+</span></div><h2>HINT</h2>
 			<div class=content><p><p>对于第一个样例，有9个权值恰好为3的神犇二叉树：<br /><br />
-<img height="432" alt="" width="819" src="upload/201406/a.jpg" /></p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+<img height="432" alt="" width="819" src="upload/201406/a.jpg" /></p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=VFleaKing%20&amp;%20pyx1997%20%E6%84%9F%E8%B0%A2wyl8899%E6%8F%90%E4%BE%9B%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91'>VFleaKing & pyx1997 感谢wyl8899提供中文翻译<br />
+</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=3625'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=3625'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=3625'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 5546. -- [PA2019]Herbata</title><center><h2>5546: [PA2019]Herbata</h2><span class=green>Time Limit: </span>20 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>256 MB<br><span class=green>Submit: </span>11&nbsp;&nbsp;<span class=green>Solved: </span>6<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5546'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5546'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5546'>Discuss</a>]</center><h2>Description</h2><div class=content><div>你有无穷多个容量无限的杯子以及n杯水，第i杯水的体积为l[i]，温度为a[i]。</div>
+<div></div>
+<div>你可以做无限次操作，每次操作是下面两种操作之一：</div>
+<div></div>
+<div>1. 选择一杯水，假设它的体积为V，温度为T，那么你可以将其倒入若干个空杯中，使得每一杯的水的温度都为T，且体积之和等于V，注意体积可以是任意非负实数。</div>
+<div></div>
+<div>2. 选择两杯水，假设一杯的体积为V_a，温度为T_a，另一杯的体积为V_b，温度为T_b，那么你可以将这两杯水混合为一杯体积为V_a+V_b，温度为(V_a*T_a+V_b*T_b)/(V_a+V_b)的水。</div>
+<div></div>
+<div>你的目标进行若干次操作，使得操作完毕后，对于所有的i(1&lt;=i&lt;=n)都有第i杯水的体积等于l[i]，温度等于b[i]。请写一个程序判断是否有解。</div>
+<p></p></div><h2>Input</h2><div class=content><div>第一行包含一个正整数T(1&lt;=T&lt;=100000)，表示测试数据的组数。</div>
+<div></div>
+<div>每组测试数据第一行包含一个正整数n(1&lt;=n&lt;=100000)。</div>
+<div></div>
+<div>接下来n行，每行三个正整数l[i],a[i],b[i](1&lt;=l[i],a[i],b[i]&lt;=1000000)。</div>
+<div></div>
+<div>输入数据保证所有的n加起来不超过1000000。</div>
+<p></p></div><h2>Output</h2><div class=content><div>对于每组数据输出一行，如果有解，输出TAK，否则输出NIE。</div>
+<p></p></div><h2>Sample Input</h2>
+			<div class=content><span class=sampledata>5<br />
+2<br />
+2 1 4<br />
+2 5 2<br />
+2<br />
+1 4 3<br />
+1 5 4<br />
+2<br />
+1 5 7<br />
+1 7 5<br />
+2<br />
+1 4 1<br />
+1 2 5<br />
+3<br />
+2 6 4<br />
+1 2 3<br />
+3 4 5</span></div><h2>Sample Output</h2>
+			<div class=content><span class=sampledata>TAK<br />
+NIE<br />
+TAK<br />
+NIE<br />
+TAK</span></div><h2>HINT</h2>
+			<div class=content><p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=%E9%B8%A3%E8%B0%A2Claris%E4%B8%8A%E4%BC%A0'>鸣谢Claris上传</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5546'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5546'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5546'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

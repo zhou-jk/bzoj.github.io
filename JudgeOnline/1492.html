@@ -1,4 +1,28 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[NOI2007]货币兑换Cash</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#1492. [NOI2007]货币兑换Cash</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：64 MiB</span> <span class="ui label">时间限制：5 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=1492">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=1492">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=1492">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>小Y最近在一家金券交易所工作。该金券交易所只发行交易两种金券：A纪念券（以下简称A券）和 B纪念券（以下</div>
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 1492. -- [NOI2007]货币兑换Cash</title><center><h2>1492: [NOI2007]货币兑换Cash</h2><span class=green>Time Limit: </span>5 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>64 MB<br><span class=green>Submit: </span>6844&nbsp;&nbsp;<span class=green>Solved: </span>2788<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=1492'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=1492'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=1492'>Discuss</a>]</center><h2>Description</h2><div class=content><div>小Y最近在一家金券交易所工作。该金券交易所只发行交易两种金券：A纪念券（以下简称A券）和 B纪念券（以下</div>
 <div>简称B券）。每个持有金券的顾客都有一个自己的帐户。金券的数目可以是一个实数。每天随着市场的起伏波动，</div>
 <div>两种金券都有自己当时的价值，即每一单位金券当天可以兑换的人民币数目。我们记录第 K 天中 A券 和 B券 的</div>
 <div>价值分别为 AK 和 BK（元/单位金券）。为了方便顾客，金券交易所提供了一种非常方便的交易方式：比例交易法</div>
@@ -14,7 +38,7 @@
 <div>知道了未来N天内的A券和B券的价值以及Rate。他还希望能够计算出来，如果开始时拥有S元钱，那么N天后最多能</div>
 <div>够获得多少元钱。</div>
 </div>
-<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>
+<p></p></div><h2>Input</h2><div class=content><div>
 <div>输入第一行两个正整数N、S，分别表示小Y能预知的天数以及初始时拥有的钱数。接下来N行，第K行三个实数AK、B</div>
 <div>K、RateK，意义如题目中所述。对于100%的测试数据，满足：0&lt;AK&le;10；0&lt;BK&le;10；0&lt;RateK&le;100；MaxProfit&le;1</div>
 <div>0^9。</div>
@@ -24,10 +48,28 @@
 <div>每次买进操作使用完所有的人民币；</div>
 <div>每次卖出操作卖出所有的金券。</div>
 </div>
-<div></div></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p>只有一个实数MaxProfit，表示第N天的操作结束时能够获得的最大的金钱数目。答案保留3位小数。</p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+<div></div></div><h2>Output</h2><div class=content><p>只有一个实数MaxProfit，表示第N天的操作结束时能够获得的最大的金钱数目。答案保留3位小数。</p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>3 100<br />
 1 1 1<br />
 1 2 2<br />
-2 2 3</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
-			<div class=content><span class=sampledata>225.000</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
-			<div class=content><p><p><img src="upload/201604/dd(3).png" width="595" height="155" alt="" /></p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+2 2 3</span></div><h2>Sample Output</h2>
+			<div class=content><span class=sampledata>225.000</span></div><h2>HINT</h2>
+			<div class=content><p><p><img src="upload/201604/dd(3).png" width="595" height="155" alt="" /></p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=1492'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=1492'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=1492'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

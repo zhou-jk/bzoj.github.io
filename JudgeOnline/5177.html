@@ -1,4 +1,28 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[Jsoi2013]贪心的导游</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#5177. [Jsoi2013]贪心的导游</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：512 MiB</span> <span class="ui label">时间限制：40 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=5177">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=5177">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=5177">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>南京有一条著名的购物街。购物街嘛，就是一排整齐的商店啦~</div>
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 5177. -- [Jsoi2013]贪心的导游</title><center><h2>5177: [Jsoi2013]贪心的导游</h2><span class=green>Time Limit: </span>40 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>512 MB<br><span class=green>Submit: </span>278&nbsp;&nbsp;<span class=green>Solved: </span>99<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5177'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5177'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5177'>Discuss</a>]</center><h2>Description</h2><div class=content><div>南京有一条著名的购物街。购物街嘛，就是一排整齐的商店啦~</div>
 <div>导游小Z每次都会把游客团带到购物街里走一段，然后选择一个商店进去购物。小Z接待的游客都是购物狂，他们恨</div>
 <div>不得将店内的商品洗劫一空，也就是说，只要他们能买，就一定会继续买（钱够不够你不用考虑，他们都有信用卡</div>
 <div>可以透支）。但是有一点，他们都非常讲究平等、很谦虚，每个人都不能忍受比别人多买什么东西或者少买什么东</div>
@@ -7,20 +31,20 @@
 <div>品就送给导游小Z了。贪心的小Z自然希望自己能获赠的商品数量越大越好啦~现在告诉你这一排共n个商店（标号为</div>
 <div>0到n-1）每个商店里的商品总数，每次小Z会带一批共p个游客的旅游团，到其中u号商店和v号商店之间逛一逛，请</div>
 <div>你帮小Z在所逛的商店区间内选择一个，告诉小Z他最多能获赠多少件商品。</div>
-<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>第一行，包含两个整数n、m，分别表示商店个数、小Z带来的旅游团个数。</div>
+<p></p></div><h2>Input</h2><div class=content><div>第一行，包含两个整数n、m，分别表示商店个数、小Z带来的旅游团个数。</div>
 <div>接下来一行，包含n个整数ai（i=0,1,&hellip;&hellip;,n-1），表示第i个商店的商品总数。</div>
 <div>接下来m行，每行三个整数u、v、p（0&le;u,v&le;n-1，2&le;p&le;1000）</div>
 <div>表示这个旅游团逛u号商店和v号商店之间的商店（包含u、v），且这个旅游团的人数为p。</div>
 <div>n&le;1000000， m&le;50000， 0&le;ai&le;1000， 2&le;p&le;1000</div>
-<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>共输出m行，每行一个整数，第i行输出第i个旅游团购物后，小Z最多能获赠的商品数量。</div>
-<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+<p></p></div><h2>Output</h2><div class=content><div>共输出m行，每行一个整数，第i行输出第i个旅游团购物后，小Z最多能获赠的商品数量。</div>
+<p></p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>5 5<br />
 2 4 6 8 10<br />
 0 1 2<br />
 1 4 3<br />
 2 4 2<br />
 1 1 9<br />
-0 4 7</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+0 4 7</span></div><h2>Sample Output</h2>
 			<div class=content><span class=sampledata>0 <br />
 2 <br />
 0 <br />
@@ -30,5 +54,23 @@
 。若去 2 号商店，共 4 件商品，每人买 2 件，剩 0 件。所以，小 Z 最多获赠 0 件。<br />
 第二个旅游团， 3 个人，小 Z 选择带他们去 4 号商店，共 8 件商品，每人买 2 件商品（因为每人 3 件不够）<br />
 ，剩下 2 件，小 Z 最多获赠就是 2 件。 可以验证去其它商店小 Z 最多获赠的商品不会达到 2 件。<br />
-</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
-			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+</span></div><h2>HINT</h2>
+			<div class=content><p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5177'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5177'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5177'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>

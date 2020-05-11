@@ -1,4 +1,28 @@
-<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[JLOI2011]小A的烦恼</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#2760. [JLOI2011]小A的烦恼</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：128 MiB</span> <span class="ui label">时间限制：10 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=2760">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=2760">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=2760">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div style="text-indent: 21pt"><span style="font-size: medium">小A是B公司的一名PM(product market)。B公司越来越注重产品使用情况分析，而小A的工作就是整天对着一堆数据分析来分析去，没完没了。其中有一个操作是小A很头疼的，就是要把多个csv文件的数据拷到同一个excel文件中去。</span></div>
+
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
+        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
+        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
+		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
+</table>
+</center>
+<title>Problem 2760. -- [JLOI2011]小A的烦恼</title><center><h2>2760: [JLOI2011]小A的烦恼</h2><span class=green>Time Limit: </span>10 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>128 MB<br><span class=green>Submit: </span>445&nbsp;&nbsp;<span class=green>Solved: </span>278<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=2760'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=2760'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=2760'>Discuss</a>]</center><h2>Description</h2><div class=content><div style="text-indent: 21pt"><span style="font-size: medium">小A是B公司的一名PM(product market)。B公司越来越注重产品使用情况分析，而小A的工作就是整天对着一堆数据分析来分析去，没完没了。其中有一个操作是小A很头疼的，就是要把多个csv文件的数据拷到同一个excel文件中去。</span></div>
 <div style="text-indent: 21pt"><span style="font-size: medium">有一天小A满怀期待地找到了你，一个高级程序员，她想让你写程序帮她完成这个简单重复性工作。这不是坑爹吗，直接操作excel还要用到第三方的库，还不如直接写到csv文件中，让她再手动去转成excel文件。经过内部沟通协调，最终定下了这个方案。</span></div>
 <div style="text-indent: 21pt"><span style="font-size: medium">csv是一种excel可支持和格式，且存储方式非常简单。它实际上就是用&ldquo;，&rdquo;来分隔相邻的两个列。比如以下三行数据</span></div>
 <div style="border-right: windowtext 1pt solid; padding-right: 4pt; border-top: windowtext 1pt solid; padding-left: 4pt; padding-bottom: 1pt; border-left: windowtext 1pt solid; padding-top: 1pt; border-bottom: windowtext 1pt solid">
@@ -192,10 +216,10 @@
 <div><span style="font-size: medium">输入的csv文件里保证了每一行的末尾都没有&ldquo;，&rdquo;，也就是说像a文件的第2行的第3列一样，如那一格是空的，那么在b2后面是没有&ldquo;，&rdquo;的。</span></div>
 <div style="text-indent: 21pt"><span style="font-size: medium">输出的csv文件里因为是程序的输出结果，为了简化程序，如果末尾是空的，那么还是会显式输出&ldquo;，&rdquo;，如以上的结果所示。</span></div>
 <div style="text-indent: 21pt"><span style="font-size: medium">输入文件保证至少有一行一列非空。</span></div>
-<div style="text-indent: 21pt"><span style="font-size: medium">输出的文件要保证下一个文件的第一列要紧邻着上一文件的最后一个非空列的右面。最后一个文件只输出到最后一个非空列。</span></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 21.2pt; mso-char-indent-count: 2.02"><font size="3"><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">第一行有一个整数</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">（</span><span lang="EN-US"><font face="Times New Roman">1</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">100</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">），表示有</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个文件。</span></font></p>
+<div style="text-indent: 21pt"><span style="font-size: medium">输出的文件要保证下一个文件的第一列要紧邻着上一文件的最后一个非空列的右面。最后一个文件只输出到最后一个非空列。</span></div></div><h2>Input</h2><div class=content><p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 21.2pt; mso-char-indent-count: 2.02"><font size="3"><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">第一行有一个整数</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">（</span><span lang="EN-US"><font face="Times New Roman">1</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">100</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">），表示有</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个文件。</span></font></p>
 <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 21.2pt; mso-char-indent-count: 2.02"><font size="3"><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">以下</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个数据块的第一行有一个整数</span><span lang="EN-US"><font face="Times New Roman">M (1</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">M</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">100)</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">和一个字符串</span><span lang="EN-US"><font face="Times New Roman">S (1</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">length(S)</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">100)</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，</span><span lang="EN-US"><font face="Times New Roman">M</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">表示文件的行数，</span><span lang="EN-US"><font face="Times New Roman">S</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">表示文件名。</span></font></p>
 <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 21.2pt; mso-char-indent-count: 2.02"><font size="3"><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个数据块的下面</span><span lang="EN-US"><font face="Times New Roman">M</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">行中，每一行是一个字符串</span><span lang="EN-US"><font face="Times New Roman">T(1</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">length(T)</font></span><span style="font-family: 宋体">&le;</span><span lang="EN-US"><font face="Times New Roman">100)</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，</span><span lang="EN-US"><font face="Times New Roman">T</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">只包含小写字母和&ldquo;，&rdquo;。</span></font></p>
-<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 21pt"><font size="3"><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">输出把</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个文件的数据合到一个文件的结果。</span></font></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+<p></p></div><h2>Output</h2><div class=content><p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 21pt"><font size="3"><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">输出把</span><span lang="EN-US"><font face="Times New Roman">N</font></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个文件的数据合到一个文件的结果。</span></font></p></div><h2>Sample Input</h2>
 			<div class=content><span class=sampledata>2<br />
 2 a<br />
 a1,b1,c1<br />
@@ -205,11 +229,29 @@ a1,b1,c1,d1<br />
 a2,b2<br />
 a3,b3,c3<br />
 a4<br />
-</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+</span></div><h2>Sample Output</h2>
 			<div class=content><span class=sampledata>a,,,b,,,<br />
 a1,b1,c1,a1,b1,c1,d1<br />
 a2,b2,,a2,b2,,<br />
 ,,,a3,b3,c3,<br />
 ,,,a4,,,<br />
-</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
-			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
+</span></div><h2>HINT</h2>
+			<div class=content><p></p></div><h2>Source</h2>
+			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=2760'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=2760'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=2760'>Discuss</a>]</center>﻿<br>
+<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
+	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>
