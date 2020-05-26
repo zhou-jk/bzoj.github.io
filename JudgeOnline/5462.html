@@ -1,28 +1,4 @@
-
-﻿<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
-</head>
-<body>
-<center>
-<div style="width:90%; text-align:left">
-<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
-</div>
-<table width=96%> 
-	<tr align="center" class='hd' valign="top">
-				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
-        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
-        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
-</table>
-</center>
-<title>Problem 5462. -- [APIO2018] 新家</title><center><h2>5462: [APIO2018] 新家</h2><span class=green>Time Limit: </span>50 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>256 MB<br><span class=green>Submit: </span>102&nbsp;&nbsp;<span class=green>Solved: </span>56<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5462'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5462'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5462'>Discuss</a>]</center><h2>Description</h2><div class=content><div>五福街是一条笔直的道路，这条道路可以看成一个数轴，街上每个建筑物的坐标都可以用一个整数来表示。小明是</div>
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[APIO2018] 新家</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#5462. [APIO2018] 新家</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：256 MiB</span> <span class="ui label">时间限制：50 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=5462">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=5462">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=5462">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>五福街是一条笔直的道路，这条道路可以看成一个数轴，街上每个建筑物的坐标都可以用一个整数来表示。小明是</div>
 <div>一位时光旅行者，他知道在这条街上，在过去现在和未来共有 n 个商店出现。第 i 个商店可以使用四个整数 x_i</div>
 <div>, t_i, a_i, b_i 描述，它们分别表示：商店的坐标、商店的类型、商店开业的年份、商店关闭的年份。</div>
 <div></div>
@@ -35,14 +11,14 @@
 <div>，到居住点距离最近的一家到居住点的距离。我们说编号为 i 的商店在第 y 年在营业当且仅当 a_i &lt;= y &lt;= b_i</div>
 <div>&nbsp;。注意，在某些年份中，可能在五福街上并非所有 k 种类型的商店都有至少一家在营业。在这种情况下，不方便</div>
 <div>指数定义为 -1。你的任务是帮助小明求出每对（坐标，时间）二元组居住的不方便指数。</div>
-<p></p></div><h2>Input</h2><div class=content><div>第一行包含三个整数 n ， k 和 q，分别表示商店的数量、商店类型的数量和（坐标，时间）二元组的数量。 &nbsp;</div>
+<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>第一行包含三个整数 n ， k 和 q，分别表示商店的数量、商店类型的数量和（坐标，时间）二元组的数量。 &nbsp;</div>
 <div>接下来 n 行，每行包含四个整数 x_i, t_i, a_i, 和 b_i 用于描述一家商店，意义如题面所述 &nbsp;</div>
 <div>接下来 q 行，每行包含两个整数 l_i, 和 y_i ，表示一组（坐标，时间）查询</div>
 <div>(1&lt;= n,q&lt;= 3e5,1&lt;= k &lt;= n)</div>
 <div>(1&lt;= x_i,a_i,b_i &lt;= 1e9,1&lt;= t_i &lt;= k,a_i &lt;= b_i)</div>
 <div>(1&lt;= l_i,y_i &lt;= 1e8)</div>
-<p></p></div><h2>Output</h2><div class=content><div>输出一行，包含q个整数，依次表示对于q组（坐标、时间）询问求出的结果。</div>
-<p></p></div><h2>Sample Input</h2>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>输出一行，包含q个整数，依次表示对于q组（坐标、时间）询问求出的结果。</div>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>4 2 4<br />
 3 1 1 10<br />
 9 2 2 4<br />
@@ -51,27 +27,9 @@
 5 3<br />
 5 6<br />
 5 9<br />
-1 10</span></div><h2>Sample Output</h2>
+1 10</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>4<br />
 2<br />
 -1<br />
--1</span></div><h2>HINT</h2>
-			<div class=content><p></p></div><h2>Source</h2>
-			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=%E9%B8%A3%E8%B0%A2Qingyu%E4%B8%8A%E4%BC%A0'>鸣谢Qingyu上传</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5462'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5462'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5462'>Discuss</a>]</center>﻿<br>
-<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
-<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
-
-<hr>
-<center>
-	<div class="footer">
-			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
-	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
-		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
-	</div>
-</center>
-</body>
-</html>
+-1</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>

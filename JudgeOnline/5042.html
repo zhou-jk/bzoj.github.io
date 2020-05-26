@@ -1,28 +1,4 @@
-
-﻿<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
-</head>
-<body>
-<center>
-<div style="width:90%; text-align:left">
-<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
-</div>
-<table width=96%> 
-	<tr align="center" class='hd' valign="top">
-				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
-        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
-        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
-</table>
-</center>
-<title>Problem 5042. -- LWD的分科岛</title><center><h2>5042: LWD的分科岛</h2><span class=green>Time Limit: </span>8 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>256 MB<br><span class=green>Submit: </span>641&nbsp;&nbsp;<span class=green>Solved: </span>240<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5042'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5042'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5042'>Discuss</a>]</center><h2>Description</h2><div class=content><div>大家都知道在文理分科的时候总是让人纠结的，纠结的当然不只是自己。比如 YSY 就去读了文科， LWD 知道了很</div>
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>LWD的分科岛</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#5042. LWD的分科岛</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：256 MiB</span> <span class="ui label">时间限制：8 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=5042">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=5042">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=5042">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>大家都知道在文理分科的时候总是让人纠结的，纠结的当然不只是自己。比如 YSY 就去读了文科， LWD 知道了很</div>
 <div>气。于是他就去卡了 BZOJ 测评机， 晚上他做了一个谜一样的梦，自己在一座全是 YSY 的分科岛。这里有 YSY&nbsp;</div>
 <div>草， YSY 花， YSY 糖&hellip;&hellip;每个 YSY 都有一个美（ Ti）丽（ Zhong）值。当然没有小于零的体重啦！LWD 于是不</div>
 <div>惜重金卖肉想买下这座岛，可是分科岛的岛主，是一位忠实的区间问题爱好者。他想把小岛传给一个谜一样的爱好</div>
@@ -32,7 +8,7 @@
 <div>有比 YYR 弱很多的你能够帮他了。挑战内容如下岛主将把 N 个 YSY 摆成一个条形，并给出所有 YSY 的美丽值。</div>
 <div>挑出多少个就要看岛主心情了，他觉得 LWD 是条汉子就会给出很多很多的 YSY 满足他。岛主将给出 Q 个考验，</div>
 <div>询问内容是在给定区间内求出最美丽的 YSY。你已经了解规则了，开始你的表演吧！</div>
-<p></p></div><h2>Input</h2><div class=content><div>第一行为一个整数 N，表示岛主摆出了 N 个 YSY。</div>
+<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>第一行为一个整数 N，表示岛主摆出了 N 个 YSY。</div>
 <div>接下来一行 N 个整数，表示每个 YSY 的美丽值(单位：kg)，因为 YSY 整体很美所以 YSY</div>
 <div>不会超过 1019kg。</div>
 <div>接下来一行一个整数 Q，表示岛主有 Q 个考验。<span style="font-family: Helvetica, 'Microsoft Yahei', verdana; font-size: 14px; line-height: 23.3240013122559px;">Q&lt;=1500000</span></div>
@@ -40,8 +16,8 @@
 <div>时代表岛主那时喜欢唐代美。询问最美计划在区间[l, r]中进行</div>
 <div>100%的数据 N&lt;= 3000000, 美丽值不会超过 1019， Q&lt;= 150000&nbsp;</div>
 <div>数据量巨大，请优化读入</div>
-<p></p></div><h2>Output</h2><div class=content><div>每一行对于每个考验输出结果，以回车符结束。</div>
-<p></p></div><h2>Sample Input</h2>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>每一行对于每个考验输出结果，以回车符结束。</div>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>5 5<br />
 1 2 3 4 5<br />
 1 1 2<br />
@@ -49,29 +25,11 @@
 1 2 5<br />
 2 4 5<br />
 2 1 5<br />
-</span></div><h2>Sample Output</h2>
+</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>1 <br />
 3 <br />
 2 <br />
 5 <br />
-5</span></div><h2>HINT</h2>
+5</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
 			<div class=content><p><p>注意：为减轻主站压力，本题完整版请到http://begin.lydsy.com/JudgeOnline/problem.php?id=4191进行提交，带来不便，敬请谅解。</p><br />
-<p></p></p></div><h2>Source</h2>
-			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=By&#32;Lazer2001'>By Lazer2001</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=5042'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=5042'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=5042'>Discuss</a>]</center>﻿<br>
-<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
-<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
-
-<hr>
-<center>
-	<div class="footer">
-			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
-	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
-		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
-	</div>
-</center>
-</body>
-</html>
+<p></p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>

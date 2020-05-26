@@ -1,28 +1,4 @@
-
-﻿<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
-</head>
-<body>
-<center>
-<div style="width:90%; text-align:left">
-<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
-</div>
-<table width=96%> 
-	<tr align="center" class='hd' valign="top">
-				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
-        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
-        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
-</table>
-</center>
-<title>Problem 2058. -- [Usaco2010 Nov]Cow Photographs</title><center><h2>2058: [Usaco2010 Nov]Cow Photographs</h2><span class=green>Time Limit: </span>3 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>64 MB<br><span class=green>Submit: </span>234&nbsp;&nbsp;<span class=green>Solved: </span>133<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=2058'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=2058'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=2058'>Discuss</a>]</center><h2>Description</h2><div class=content>奶牛的图片 
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[Usaco2010 Nov]Cow Photographs</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#2058. [Usaco2010 Nov]Cow Photographs</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：64 MiB</span> <span class="ui label">时间限制：3 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=2058">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=2058">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=2058">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">奶牛的图片 
 Farmer John希望给他的N(1<=N<=100,000)只奶牛拍照片,这样他就可以向他的朋友炫耀他的奶牛.这N只奶牛被标号为1..N.
 在照相的那一天,奶牛们排成了一排.其中第i个位置上是标号为c_i(1<=c_i<=N)的奶牛.对于奶牛的站位,Farmer John有他自己的想法.
 FJ是这么想的,标号为i(1<=i<=n-1)的奶牛只能站在标号为i+1的奶牛的左边,而标号为N的奶牛只能站在标号为1的奶牛的左边.当然,没有牛可以站在队列中最左边的奶牛的左边了.也就是说,最左边的奶牛编号是随意的.
@@ -36,10 +12,10 @@ FJ是这么想的,标号为i(1<=i<=n-1)的奶牛只能站在标号为i+1的奶�
 第二分钟,FJ交换最右边的一对,序列变成这样:
         3  4  5  1  2
 这样,只用了2分钟,就是序列变为了一个FJ所希望的序列.
-</div><h2>Input</h2><div class=content>第1行:一个单独的数N
+</div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content>第1行:一个单独的数N
 第2到n+1行:第i+1行上的数表示站在第i的位置上的奶牛的编号(即c_i).
-</div><h2>Output</h2><div class=content>一个整数,表示是奶牛的序列变为一个合法的序列的最小花费时间.
-</div><h2>Sample Input</h2>
+</div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content>一个整数,表示是奶牛的序列变为一个合法的序列的最小花费时间.
+</div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>5<br />
 <br />
 3<br />
@@ -51,25 +27,7 @@ FJ是这么想的,标号为i(1<=i<=n-1)的奶牛只能站在标号为i+1的奶�
 2<br />
 <br />
 1<br />
-</span></div><h2>Sample Output</h2>
+</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>2<br />
-</span></div><h2>HINT</h2>
-			<div class=content><p></p></div><h2>Source</h2>
-			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=Gold'>Gold</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=2058'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=2058'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=2058'>Discuss</a>]</center>﻿<br>
-<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
-<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
-
-<hr>
-<center>
-	<div class="footer">
-			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
-	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
-		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
-	</div>
-</center>
-</body>
-</html>
+</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>

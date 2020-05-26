@@ -1,28 +1,4 @@
-
-﻿<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
-</head>
-<body>
-<center>
-<div style="width:90%; text-align:left">
-<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
-</div>
-<table width=96%> 
-	<tr align="center" class='hd' valign="top">
-				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
-        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
-        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
-</table>
-</center>
-<title>Problem 3220. -- 披萨</title><center><h2>3220: 披萨</h2><span class=green>Time Limit: </span>10 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>128 MB<br><span class=green>Submit: </span>4&nbsp;&nbsp;<span class=green>Solved: </span>3<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=3220'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=3220'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=3220'>Discuss</a>]</center><h2>Description</h2><div class=content><div align="left"><span style="font-size: medium">&nbsp;</span></div>
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>披萨</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#3220. 披萨</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：128 MiB</span> <span class="ui label">时间限制：10 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=3220">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=3220">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=3220">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div align="left"><span style="font-size: medium">&nbsp;</span></div>
 <div align="left"><span style="font-size: medium">在遥远的Utopia City里，有一种美食让人们为之倾倒：披萨。披萨是一种做工非常讲究的美食，必须由N种原料共同制作（饼皮，红肠，大虾，各种酱料，各种装饰，等等）。Utopia City的主干道上有B个商业园区，每个园区里都有一座PizzaHut大楼；在早先的青铜时代里，PizzaHut的运营方式很简单，一楼是一个巨大的PizzaHut柜台，贩卖各种各样的Pizza。在大楼的其他地方有恰好N家原料商，每一家都供应PizzaHut的一种原料。</span></div>
 <div align="left"><span style="font-size: medium">这样的日子持续了很多年。不知从黑铁时代的哪个年头开始，原料商们觉得售卖单一原料已经无利可图，因此所有的原料商都开始售卖所有的N种原料做Pizza。原料商们提供的原料良莠不齐，所幸可以用一个统一指标&mdash;&mdash;质量来衡量。我们假设第I个商业园区里第J个原料商提供的第K种原料的质量为Q[i,j,k]。（1&lt;=i&lt;=B,1&lt;=j&lt;=N,1&lt;=k&lt;=N）。</span></div>
 <div align="left"><span style="font-size: medium">问题又来了。一楼的PizzaHut柜台由于进货渠道混乱已经毫无消息，而虽然一家原料商能供应做Pizza的所有原料，但要在所有的B*N个原料店中找到一家在各种原料上都可圈可点的店面是十分困难的。国家的披萨工业陷入了困境。</span></div>
@@ -47,7 +23,7 @@
 <div align="left"><span style="font-size: medium">他相信只要他说服Ratar选择某两座建筑B1和B2，他就不需要比Ratar多跑一天路。</span></div>
 <div align="left"><span style="font-size: medium">但是Ratar看出了他的计划。因此她想要选择两座建筑B1和B2(B1&lt;B2)，使得根据上面的安排，Tarat需要多跑一天的路。</span></div>
 <div align="left"><span style="font-size: medium"><b>你的任务，就是求出有多少种可行的建筑对</b><b>(B1,B2)</b><b>，使得</b><b>Tarat</b><b>必须多跑一天路。</b></span></div>
-<div align="left"><span style="font-size: medium"><b>&nbsp;</b></span></div></div><h2>Input</h2><div class=content><div align="left"><span style="font-size: medium">本题有多组数据，第一行就是数据组数T。</span></div>
+<div align="left"><span style="font-size: medium"><b>&nbsp;</b></span></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div align="left"><span style="font-size: medium">本题有多组数据，第一行就是数据组数T。</span></div>
 <div align="left"><span style="font-size: medium">每组数据的开始是两个数：N和B，分别表示披萨原料的种数和Pizzahut大楼的数量。注意一座Pizzahut大楼里的原料商数量也恰好为N。</span></div>
 <div align="left"><span style="font-size: medium">现在输入矩阵Q[B][N][N]的信息，Q[i][j][k]表示第i个建筑中第j个原料商提供的第k种原料质量。接下来将依次输入B个矩阵，依次表示第i个建筑的信息。</span></div>
 <div align="left"><span style="font-size: medium">为了防止输入文件过于庞大，我们把输入方式分为两种：raw和random，在每个建筑信息的第一行进行标识。</span></div>
@@ -62,8 +38,8 @@
 <div align="left"><span style="font-size: medium">D=2^12 = 4096。</span></div>
 <div align="left"><span style="font-size: medium">Floor(x)表示取下整。样例里有这种输入方式的一个例子。</span></div>
 <div align="left"><span style="font-size: medium">注意：一个数据里可以同时存在两种输入方式。Si,Pi,Ai是纯粹的随机数种子，分析它们对解题完全没有意义。</span></div>
-<div align="left"><span style="font-size: medium">&nbsp;</span></div></div><h2>Output</h2><div class=content><div align="left">&nbsp;</div>
-<div align="left"><span style="font-size: medium">T行，每行一个数表示答案。</span></div></div><h2>Sample Input</h2>
+<div align="left"><span style="font-size: medium">&nbsp;</span></div></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div align="left">&nbsp;</div>
+<div align="left"><span style="font-size: medium">T行，每行一个数表示答案。</span></div></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>3<br />
 3 3<br />
 raw<br />
@@ -109,11 +85,11 @@ raw<br />
 6 49 65 59 92 70 95 56 4 21<br />
 98 39 50 13 22 38 31 70 63 29<br />
 3 60 93 22 81 95 7 21 12 49<br />
-</span></div><h2>Sample Output</h2>
+</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>1<br />
 5<br />
 1<br />
-</span></div><h2>HINT</h2>
+</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
 			<div class=content><p><p><span style="font-size: medium">在第一个数据中，只有(B1,B2)=(1,2)满足要求。为了对题目有更深了解，我们可以来分析这个情况。用(i,j)表示Polaris使用第1个建筑里的第i个供货商和第2个建筑里第j个供货商两个商人的原料做出Pizza的价格。<br /><br />
 那么(1, 1)的价格是82*19+51*84+44*64 = 8658，(1, 2)的价格是82*17+51*43+44*44 = 5523，(1, 3)的价格是82*30+51*81+44*57 = 9099，(2, 1)的价格是41*19+10*84+38*64 = 4051，(2, 2)的价格是41*17+10*43+38*44 = 2799，(2, 3)的价格是41*30+10*81+38*57 = 4206，(3, 1)的价格是23*19+33*84+58*64 = 6921，(3, 2)的价格是23*17+33*43+58*44 = 4362，(3, 3)的价格是23*30+33*81+58*57 = 6669。<br /><br />
 在所有的3!=6天中，有5天出现了至少1个奇数价格的披萨，需要两个人跑腿：<br /><br />
@@ -131,22 +107,4 @@ Q[1, 4, 1] = 27, Q[1, 4, 2] = 27, Q[1, 4, 3] = 34, Q[1, 4, 4] = 30.<br /><br />
 对于所有数据：1&lt;=Q[i,j,k]&lt;=100，生成数据用的Si,Pi,Ai&lt;=40000，T&lt;=5，&Sigma;(B)&lt;=8000。<br /><br />
 考虑读入数据可能占用大部分时间，测试数据输入文件大小&lt;=3000KB。<br /><br />
 在大数据中，以raw读入的Q[i]大约有3%~10%，也就是说大部分数据是random的。<br /><br />
-对于100%的数据：N&lt;=60,B&lt;=4000.&Sigma;(B)&lt;=8001.</span></p></p></div><h2>Source</h2>
-			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=3220'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=3220'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=3220'>Discuss</a>]</center>﻿<br>
-<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
-<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
-
-<hr>
-<center>
-	<div class="footer">
-			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
-	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
-		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
-	</div>
-</center>
-</body>
-</html>
+对于100%的数据：N&lt;=60,B&lt;=4000.&Sigma;(B)&lt;=8001.</span></p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>

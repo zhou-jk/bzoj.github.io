@@ -1,5 +1,4 @@
 #!/bin/bash
-
 read bgn <./begin.txt
 read end <./end.txt
 pid=$bgn
@@ -64,3 +63,4 @@ cp ./special/* $path/JudgeOnline
 
 echo "done."
 echo "Rendering completed!"
+

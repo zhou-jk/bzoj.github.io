@@ -1,0 +1,26 @@
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[Usaco2020 Open]Sprinklers 2-Return of the Alfalfa</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#5567. [Usaco2020 Open]Sprinklers 2-Return of the Alfalfa</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：512 MiB</span> <span class="ui label">时间限制：10 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=5567">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=5567">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=5567">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>Farmer John 有一块小的田地，形状为一个 N 行 N 列的一个方阵（1&le;N&le;2000），对于所有的 1&le;i,j&le;N，从上往下的第 i 行的从左往右第 j 个方格记为 (i,j)。他有兴趣在他的田地里种植甜玉米和苜蓿。为此，他需要安装一些特殊的洒水器。</div>
+<div>在方格 (I,J) 中的甜玉米洒水器可以喷洒到所有左下方的方格：即满足 I&le;i 以及 j&le;J 的 (i,j)。</div>
+<div></div>
+<div>在方格 (I,J) 中的苜蓿洒水器可以喷洒到所有右上方的方格：即满足 i&le;I 以及 J&le;j 的 (i,j)。</div>
+<div></div>
+<div>被一个或多个甜玉米洒水器喷洒到的方格可以长出甜玉米；被一个或多个苜蓿洒水器喷洒到的方格可以长出苜蓿。但是被两种洒水器均喷洒到（或均喷洒不到）的方格什么也长不出来。</div>
+<div></div>
+<div>帮助 FJ 求出在他的田地里安装洒水器的方法数（模 10^9+7），每个方格至多安装一个洒水器，使得每个方格均能生长作物（即被恰好一种洒水器喷洒到）。</div>
+<div></div>
+<div>某些方格正被长毛奶牛占据；这不会阻止这些方格生长作物，但是这些方格里不能安装洒水器。</div>
+<div></div>
+<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>输入的第一行包含一个整数 N。</div>
+<div>对于每一个 1&le;i&le;N，第 i+1 行包含一个长为 N 的字符串，表示方阵的第 i 行。字符串中的每个字符为 'W'（表示被一头长毛奶牛占据的方格）或 '.'（未被占据）。</div>
+<div></div>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>输出安装洒水器的方法数除以 10^9+7 的余数。</div>
+<div></div>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+			<div class=content><span class=sampledata>2<br />
+..<br />
+..</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+			<div class=content><span class=sampledata>28<br />
+以下是所有十四种可以使得 (1,1) 生长甜玉米的方式。（译注：C 表示 sweet corn，即甜玉米；A 表示 alfalfa，即苜蓿）<br />
+<br />
+CC  .C  CA  CC  .C  CA  CA  C.  CA  C.  CC  .C  CC  .C  <br />
+CC, CC, CC, .C, .C, .C, CA, CA, .A, .A, C., C., .., ..</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>

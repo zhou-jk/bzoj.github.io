@@ -1,0 +1,52 @@
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[Usaco2020 Open]exercise</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#5566. [Usaco2020 Open]exercise</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：512 MiB</span> <span class="ui label">时间限制：10 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=5566">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=5566">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=5566">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>Farmer John（又）想到了一个新的奶牛晨练方案！</div>
+<div>如同之前，Farmer John 的 N 头奶牛（1&le;N&le;7500）站成一排。对于 1&le;i&le;N 的每一个 i，从左往右第 i 头奶牛的编号为 i。他告诉她们重复以下步骤，直到奶牛们与她们开始时的顺序相同。</div>
+<div></div>
+<div>给定长为 N 的一个排列 A，奶牛们改变她们的顺序，使得在改变之前从左往右第 i 头奶牛在改变之后为从左往右第 Ai 头。</div>
+<div>例如，如果 A=(1,2,3,4,5)，那么奶牛们总共进行一步就回到了同样的顺序。如果 A=(2,3,1,5,4)，那么奶牛们总共进行六步之后回到起始的顺序。每步之后奶牛们从左往右的顺序如下：</div>
+<div></div>
+<div>0 步：(1,2,3,4,5)</div>
+<div>1 步：(3,1,2,5,4)</div>
+<div>2 步：(2,3,1,4,5)</div>
+<div>3 步：(1,2,3,5,4)</div>
+<div>4 步：(3,1,2,4,5)</div>
+<div>5 步：(2,3,1,5,4)</div>
+<div>6 步：(1,2,3,4,5)</div>
+<div>计算所有可能的 N! 种长为 N 的排列 A 回到起始顺序需要的步数的乘积。</div>
+<div></div>
+<div>由于这个数字可能非常大，输出答案模 M 的余数（10^8&le;M&le;10^9+7，M 是质数）。</div>
+<div></div>
+<div>使用 C++ 的选手可以使用 KACTL 中的这一代码。这一名为 Barrett 模乘 的算法可以以比通常计算快上数倍的速度计算 a%b，其中 b&gt;1 为一个编译时未知的常数。（不幸的是，我们没有找到对于 Java 的这样的优化）。（译注：中文选手可以参考 几种取模优化方法（译自 min-25 的博客））</div>
+<div></div>
+<div>#include &lt;bits/stdc++.h&gt;</div>
+<div>using namespace std;</div>
+<div></div>
+<div>typedef unsigned long long ull;</div>
+<div>typedef __uint128_t L;</div>
+<div>struct FastMod {</div>
+<div>&nbsp; &nbsp; ull b, m;</div>
+<div>&nbsp; &nbsp; FastMod(ull b) : b(b), m(ull((L(1) &lt;&lt; 64) / b)) {}</div>
+<div>&nbsp; &nbsp; ull reduce(ull a) {</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; ull q = (ull)((L(m) * a) &gt;&gt; 64);</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; ull r = a - q * b; // can be proven that 0 &lt;= r &lt; 2*b</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; return r &gt;= b ? r - b : r;</div>
+<div>&nbsp; &nbsp; }</div>
+<div>};</div>
+<div>FastMod F(2);</div>
+<div></div>
+<div>int main() {</div>
+<div>&nbsp; &nbsp; int M = 1000000007; F = FastMod(M);</div>
+<div>&nbsp; &nbsp; ull x = 10ULL*M+3;&nbsp;</div>
+<div>&nbsp; &nbsp; cout &lt;&lt; x &lt;&lt; &quot; &quot; &lt;&lt; F.reduce(x) &lt;&lt; &quot;\n&quot;; // 10000000073 3</div>
+<div>}</div>
+<div></div>
+<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>输入的第一行包含 N 和 M。</div>
+<div></div>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>输出一个整数。</div>
+<div></div>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+			<div class=content><span class=sampledata>5 1000000007</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
+			<div class=content><span class=sampledata>369329541<br />
+对于每一个 1≤i≤N，<br />
+以下序列的第 i 个元素等于奶牛需要使用 i 步的排列数量：[1,25,20,30,24,20]。<br />
+所以答案等于1^1⋅2^25⋅3^20⋅4^30⋅5^24⋅6^20≡369329541(mod10^9+7)。</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>

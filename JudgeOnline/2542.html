@@ -1,28 +1,4 @@
-
-﻿<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
-</head>
-<body>
-<center>
-<div style="width:90%; text-align:left">
-<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
-</div>
-<table width=96%> 
-	<tr align="center" class='hd' valign="top">
-				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
-        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
-        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
-</table>
-</center>
-<title>Problem 2542. -- [Ctsc2001]终极情报网 </title><center><h2>2542: [Ctsc2001]终极情报网 </h2><span class=green>Time Limit: </span>1 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>128 MB<br><span class=green>Submit: </span>451&nbsp;&nbsp;<span class=green>Solved: </span>184<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=2542'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=2542'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=2542'>Discuss</a>]</center><h2>Description</h2><div class=content><p><font face="Times New Roman" size="3">在最后的诺曼底登陆战开始之前，盟军与德军的情报部门围绕着最终的登陆地点展开了一场规模空前的情报战。 <br />
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>[Ctsc2001]终极情报网 </title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#2542. [Ctsc2001]终极情报网 </h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：128 MiB</span> <span class="ui label">时间限制：1 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=2542">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=2542">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=2542">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><p><font face="Times New Roman" size="3">在最后的诺曼底登陆战开始之前，盟军与德军的情报部门围绕着最终的登陆地点展开了一场规模空前的情报战。 <br />
 这场情报战中，盟军的战术是利用那些潜伏在敌军内部的双重间谍，将假的登陆消息发布给敌军的情报机关的负责人。那些已经潜入敌后的间谍们都是盟军情报部的精英，忠实可靠；但是如何选择合适的人选，以及最佳的消息传递方法，才能保证假消息能够尽快而且安全准确地传递到德军指挥官们的耳朵里，成了困扰盟军情报部长的最大问题。他需要你的帮助。 <br />
 <br />
 以下是情报部长提供的作战资料： <br />
@@ -40,17 +16,17 @@
 <br />
 你可以利用计算机，来求得这个最可靠的消息传递方案。 <br />
 <br />
-</font></p></div><h2>Input</h2><div class=content><p><font face="Times New Roman" size="3">第一行包括两个整数N和K，分别是间谍的总人数和计划包含的消息总数。 <br />
+</font></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p><font face="Times New Roman" size="3">第一行包括两个整数N和K，分别是间谍的总人数和计划包含的消息总数。 <br />
 第二行包括2N个数，前N个数是实数AS1, AS2, &hellip;, ASN（范围在[0, 1]以内）；后N个数是整数AM1, AM1, &hellip;, AMN。 <br />
 第三行包含了N个整数，其中第i（i = 1, 2, &hellip;, N）个整数如果为0表示间谍i与德军情报部不进行联系，如果为1则表示间谍与德军情报部进行联系。 <br />
 第四行开始，每行包括4个数，依次分别是：代表间谍编号的正整数i和j，间谍i和j联系的安全性参数Si j（[0，1]范围内的实数），以及i、j之间传递的最大消息数 Mi j（每一行的i均小于j ）。 <br />
 最后的一行包含两个整数-1 -1，表示输入数据的结束。 <br />
 0 <br />
-</font></p></div><h2>Output</h2><div class=content><p align="left">&nbsp;</p>
+</font></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><p align="left">&nbsp;</p>
 <p><font face="Times New Roman" size="3">只有一行。这一行中包含一个实数P，给出的是整个计划的可靠程度P，保留5位有效数字（四舍五入）。 <br />
 如果情报网根本不能将K条消息传到德军手中，那么计划的可靠性为0。 <br />
 （你可以假定，如果计划存在，那么它的可靠性大于1e-12） <br />
-</font></p></div><h2>Sample Input</h2>
+</font></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>6 13<br />
 0.9 0.7 0.8 0 0 0 2 6 8 0 0 0<br />
 0 0 0  1  0  1<br />
@@ -63,25 +39,7 @@
 -1 -1<br />
 <br />
 <br />
-</span></div><h2>Sample Output</h2>
+</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>0.00021184<br />
-</span></div><h2>HINT</h2>
-			<div class=content><p></p></div><h2>Source</h2>
-			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search='></a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=2542'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=2542'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=2542'>Discuss</a>]</center>﻿<br>
-<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
-<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
-
-<hr>
-<center>
-	<div class="footer">
-			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
-	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
-		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
-	</div>
-</center>
-</body>
-</html>
+</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
+			<div class=content><p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>

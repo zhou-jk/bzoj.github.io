@@ -1,28 +1,4 @@
-
-﻿<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel=stylesheet href='http://www.lydsy.com/JudgeOnline/include/hoj.css' type='text/css'>
-</head>
-<body>
-<center>
-<div style="width:90%; text-align:left">
-<img src="http://www.lydsy.com/JudgeOnline/image/logo.png"/>
-</div>
-<table width=96%> 
-	<tr align="center" class='hd' valign="top">
-				<th><a href="http://www.lydsy.com/JudgeOnline/faqs.php">F.A.Qs</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/">Home</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/bbs.php">Discuss</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/problemset.php">ProblemSet</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/status.php">Status</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/ranklist.php">Ranklist</a></th>
-        <th><a href="http://www.lydsy.com/JudgeOnline/contest.php">Contest</a></th>
-        <th><a href="http://begin.lydsy.com/JudgeOnline">入门OJ</a></th>
-		<th><a href="http://www.lydsy.com/JudgeOnline/loginpage.php">Login</a></th><th><a href="http://www.lydsy.com/JudgeOnline/registerpage.php">Register</a></th>		</tr>
-</table>
-</center>
-<title>Problem 3815. -- 卡常数</title><center><h2>3815: 卡常数</h2><span class=green>Time Limit: </span>50 Sec&nbsp;&nbsp;<span class=green>Memory Limit: </span>512 MB<br><span class=green>Submit: </span>125&nbsp;&nbsp;<span class=green>Solved: </span>50<br>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=3815'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=3815'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=3815'>Discuss</a>]</center><h2>Description</h2><div class=content><div>在某个诡异的地方，有一座智慧之城，那里的人民平均智商为 192，智商低于 150 的人都被称为弱智。智慧之城的市长名叫卡常（Karp-de-Chant），他 12 岁时在智慧之城中心大学 Cross Institute 获得博士学位，两年后发明了一种数列 &mdash;&mdash; 卡常数（Karp-de-Chant Number），该数列可用来解决或优化数论、图论等领域的多种经典难题。后来，卡常数被 Trajan（智慧之城的副市长）用 spaly 树进行扩展后，威力大大增加，可以在线性时间内解决各种网络流问题和其它一些难题。卡常和 Trajan 因此分别被选为正、副市长，他们和智慧之城内的另一些智者一起，领导人民共同建设人类智慧，发挥创造和改进的能力。</div>
+<html><head><meta charset="utf-8"/><link rel="icon" href="../image/logo32x32.png" sizes="32x32" /><link rel="icon" href="../image/logo192x192.png" sizes="192x192" /><link rel="stylesheet" type="text/css" href="../Semantic/semantic.min.css"><script src="../Semantic/jquery.min.js" type="text/javascript"></script><script src="../Semantic/semantic.min.js" type="text/javascript"></script><title>卡常数</title></head><body><div class="ui three item menu"><a class="header item" href="../index.html"><img src="../image/logo.png"><span style="font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; font-size: 1.3em; font-weight: 300; ">BZPRO</span></a></div><div class="ui main container"><div class="ui center aligned grid"><div class="row"><h1 class="ui header">#3815. 卡常数</h1></div><div class="row" style="margin-top: -15px"><span class="ui label">内存限制：512 MiB</span> <span class="ui label">时间限制：50 Sec</span></div></div><div class="ui grid"><div class="row"><div class="column"><div class="ui buttons"><a class="small ui primary button" href="https://www.lydsy.com/JudgeOnline/submitpage.php?id=3815">提交</a> <a class="small ui positive button" href="https://www.lydsy.com/JudgeOnline/problemstatus.php?id=3815">提交记录</a> <a class="small ui yellow button" href="https://www.lydsy.com/JudgeOnline/wttl/wttl.php?pid=3815">讨论</a></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">题目描述</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div>在某个诡异的地方，有一座智慧之城，那里的人民平均智商为 192，智商低于 150 的人都被称为弱智。智慧之城的市长名叫卡常（Karp-de-Chant），他 12 岁时在智慧之城中心大学 Cross Institute 获得博士学位，两年后发明了一种数列 &mdash;&mdash; 卡常数（Karp-de-Chant Number），该数列可用来解决或优化数论、图论等领域的多种经典难题。后来，卡常数被 Trajan（智慧之城的副市长）用 spaly 树进行扩展后，威力大大增加，可以在线性时间内解决各种网络流问题和其它一些难题。卡常和 Trajan 因此分别被选为正、副市长，他们和智慧之城内的另一些智者一起，领导人民共同建设人类智慧，发挥创造和改进的能力。</div>
 <div></div>
 <div>然而某一天，智慧之城突然受到了反人类智慧者的袭击，反人类智慧者在城内设置了 N 个摄像头（由于他们的智商很低，只会用摄像头这种垃圾玩意），企图监视城内的人们。卡常、Trajan 决定找到这些摄像头并摧毁它们。</div>
 <div></div>
@@ -30,7 +6,7 @@
 <div></div>
 <div>后来人们终于找到了这 N 个摄像头的位置，并发现在他们用发射器进行实验的过程中，某些摄像头被移位&mdash;&mdash;这就是导致反馈结果不对劲的原因。但是，在对实验结果进行分析的时候，人们却肿么也回忆不起每次实验发现的摄像头是哪个了（可能是遭遇了灵异事件导致脑抽），只知道每次实验时发射器的位置和半径。你的任务就是，根据实验数据（为了防止被反人类智慧者窃取，已经进行了加密）找出每次实验时被发射器找到的摄像头的编号。</div>
 <div></div>
-<p></p></div><h2>Input</h2><div class=content><div>第一行两个正整数 N、M，表示摄像头数量（摄像头以 1 到 N 编号）和事件数量。</div>
+<p></p></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输入格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>第一行两个正整数 N、M，表示摄像头数量（摄像头以 1 到 N 编号）和事件数量。</div>
 <div></div>
 <div>第二行两个实数 a、b，表示加密参数。</div>
 <div></div>
@@ -42,11 +18,11 @@
 <div>1 x y z r，表示进行一次实验，将发射器放在 (x,y,z) 处并设置半径为r，数据保证每次实验能且仅能发现一个摄像头；</div>
 <div>加密方式：设函数 f(x)=ax&minus;bsinx，对于所有事件中的参数（i、x、y、z、r），均加密成 f(last_res&times;原值+1)，其中 last_res 为上一个实验事件的返回值（即发现的摄像头编号），若之前未进行过实验则 last_res=0.1。</div>
 <div></div>
-<p></p></div><h2>Output</h2><div class=content><div>对于每个实验事件，输出发现的摄像头编号，一个一行。</div>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">输出格式</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><div class=content><div>对于每个实验事件，输出发现的摄像头编号，一个一行。</div>
 <div>
 <div></div>
 </div>
-<p></p></div><h2>Sample Input</h2>
+<p></p></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">样例</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;"><h4>样例输入</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata><br />
 6 10<br />
 1 0<br />
@@ -65,33 +41,15 @@
 0 13.0 7.3 28.6 22.6<br />
 0 4.0 22.3 -17.6 1.3<br />
 1 -3.2 -14.0 16.6 30.9549661993<br />
-0 7.0 -3.1 5.8 -0.9</span></div><h2>Sample Output</h2>
+0 7.0 -3.1 5.8 -0.9</span></div></code></pre></div><h4>样例输出</h4><div class="ui existing segment"><pre style="margin-top:0; margin-bottom:0;"><code class="lang-plain">
 			<div class=content><span class=sampledata>1<br />
 6<br />
 2<br />
 3<br />
-1</span></div><h2>HINT</h2>
+1</span></div></code></pre></div></div></div></div></div><div class="row"><div class="column"><h4 class="ui top attached block header">数据范围与提示</h4><div class="ui bottom attached segment font-content"><div style="position: relative; overflow: hidden;">
 			<div class=content><p><div>N&lt;=65536</div><br />
 <div>M&lt;=65536</div><br />
 <div>所有的测试点满足 0&le;b&lt;a&lt;5，坐标的绝对值均不超过 100，所有坐标均为随机生成且至少精确到 10^&minus;5。</div><br />
 <div></div><br />
 <div>为尽可能减小精度误差，建议 C/C++ 使用long double类型、Pascal 使用 EXTENDED 类型存储实数。</div><br />
-<p></p></p></div><h2>Source</h2>
-			<div class=content><p><a href='http://www.lydsy.com/JudgeOnline/problemset.php?search=2015%E5%B9%B4%E5%9B%BD%E5%AE%B6%E9%9B%86%E8%AE%AD%E9%98%9F%E6%B5%8B%E8%AF%95'>2015年国家集训队测试</a></p></div><center>[<a href='http://www.lydsy.com/JudgeOnline/submitpage.php?id=3815'>Submit</a>][<a href='http://www.lydsy.com/JudgeOnline/problemstatus.php?id=3815'>Status</a>][<a href='http://www.lydsy.com/JudgeOnline/bbs.php?id=3815'>Discuss</a>]</center>﻿<br>
-<a href="http://www.lydsy.com/JudgeOnline/"><span class=red>HOME</span></a>
-<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
-
-<hr>
-<center>
-	<div class="footer">
-			<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=ko">한국어</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=fa">فارسی</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
-		<a href="http://www.lydsy.com/JudgeOnline/setlang.php?lang=th">ไทย</a>
-	<br><div>版权所有 &copy;2008-2018 大视野在线测评 | <a href="http://beian.miit.gov.cn">湘ICP备19021049号</a></div>
-		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
-	</div>
-</center>
-</body>
-</html>
+<p></p></p></div></div></div></div></div></div></div><div class="ui vertical footer segment"><div class="ui center aligned container"><span style="color: #999;">BZPRO Powered by Remmina.</span><br/><a href="https://github.com/remmina/BZPRO">Github Repository</a></div></div></body></html>
